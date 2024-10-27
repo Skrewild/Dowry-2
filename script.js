@@ -2,7 +2,7 @@ const calculate = () => {
     const brideName = document.getElementById("name").value.trim();
     const startingBid = parseFloat(document.getElementById("starting_bid").value);
 
-    if (brideName === "" || isNaN(startingBid)) {
+    if (brideName === "" || isNaN(startingBid) || startingBid < 0) {
         alert("Incorrect inputs");
         return;
     }
